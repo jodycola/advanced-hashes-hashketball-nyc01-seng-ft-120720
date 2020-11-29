@@ -145,9 +145,9 @@ def shoe_size(name)
   end
 end
 
-def team_colors(team)
+def team_colors(teams)
   game_hash.each do |team, team_data|
-    if team.has_value?(team)
+    if team.has_value?(teams)
       return team[:colors].map(&:capitalize)
     end
   end
