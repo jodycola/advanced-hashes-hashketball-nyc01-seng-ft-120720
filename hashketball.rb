@@ -143,7 +143,6 @@ def shoe_size(name)
       return player[:shoe] if player.has_value?(name)
     end
   end
-
 end
 
 
