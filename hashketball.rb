@@ -147,7 +147,7 @@ end
 
 def team_colors(teams)
   game_hash.each do |team, team_data|
-    if team.has_value?(teams)
+    if team_data.has_value?(teams)
       return team[:colors].map(&:capitalize)
     end
   end
