@@ -129,4 +129,6 @@ def game_hash
 end
 
 # Write code here
-d
+def num_points_scored
+  game_hash
+end
