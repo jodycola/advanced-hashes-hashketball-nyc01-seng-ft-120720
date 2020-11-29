@@ -131,5 +131,5 @@ end
 # Write code here
 def num_points_scored(name)
   game_hash[:home][:players][:player_name][name]
-    #teams[:player_name][name]
+    binding.pry
 end
