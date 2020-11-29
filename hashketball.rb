@@ -136,5 +136,5 @@ def num_points_scored(name)
       return stats[:points] if stats.has_value?(name)
     end
   end
-
 end
+
