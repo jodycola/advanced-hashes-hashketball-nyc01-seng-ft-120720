@@ -135,4 +135,6 @@ def num_points_scored(name)
   #game_hash[:home][:players][:player_name][name]
     binding.pry
     puts 'hi'
+  end
+end
 end
