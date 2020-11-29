@@ -130,7 +130,7 @@ end
 
 # Write code here
 def num_points_scored(name)
-  game_hash.each_key do |teams|
+  game_hash.each do |teams|
     #teams[:player_name][name]
     binding.pry
     puts 'hi'
