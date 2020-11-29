@@ -131,7 +131,9 @@ end
 # Write code here
 def num_points_scored(name)
   game_hash.each do |x, y|
+    x.each do |s, a|
     binding.pry
     puts 'hi'
+  end
   end
 end
