@@ -156,7 +156,14 @@ end
 
 def team_names
   game_hash.values.each do |team_data|
-    return team_data[:team_name]
   end
+  return team_data[:team_name]
 end
 
+def player_numbers(team)
+  game_hash.values.each do |team_data|
+    if team_data.has_value?(team)
+      return team_data[:players].map { |player| player[:number]}
+    end
+  end
+end
