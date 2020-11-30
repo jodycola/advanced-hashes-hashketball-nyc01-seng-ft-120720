@@ -158,7 +158,6 @@ def team_names
   game_hash.values.each do |team_data|
     binding.pry
     return team_data[:team_name]
-  end
 end
 
 def player_numbers(team)
