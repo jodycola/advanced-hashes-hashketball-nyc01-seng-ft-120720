@@ -146,7 +146,7 @@ def shoe_size(name)
 end
 
 def team_colors(team)
-  game_hash.values.each do |team_data|
+  game_hash.each do |team, team_data|
     binding.pry
     if team_data.has_value?(team)
       return team_data[:colors]
