@@ -162,7 +162,7 @@ end
 def player_numbers(team)
   game_hash.values.each do |team_data|
     if team_data.has_value?(team)
-      return team_data[:players][:number]}
+      return team_data[:players][:number]
     end
   end
 end
