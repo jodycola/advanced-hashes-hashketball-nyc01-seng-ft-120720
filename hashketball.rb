@@ -147,6 +147,7 @@ end
 
 def team_colors(team)
   game_hash.values.each do |team_data|
+    binding.pry
     if team_data.has_value?(team)
       return team_data[:colors]
     end
@@ -154,7 +155,7 @@ def team_colors(team)
 end
 
 def team_names
-  game_hash.values.map {|value| value[:team_name]}
+  game_hash.values.each.map {|value| value[:team_name]}
 end
 
 
